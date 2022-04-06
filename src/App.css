@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #010d23;
+}
+
+.header{
+  flex: 20%;
+  background-color: #010d23;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App h1{
+  color: white;
+  margin-top: 50px; 
+}
+
+.App p {
+  color: white;
+}
+
+.header .inputContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.header input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  font-size: 1em;
+  border: 1px solid #038bbb;
+  outline: none;
+  color: #fff;
+  background-color: #03223f;
+}
+
+.header input::placeholder{
+  color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.header button {
+  width: 40px;
+  height: 37px;
+  color: #03223f;
+  font-size: 1.2em;
+  border: none;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.header button:hover{
+  transform: scale(1.3);
+  color: #010d23;
+  border-radius: 50px;
+}
+
+.todoList {
+  flex:80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background-color: #010d23;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: white;
+  margin: 15px;
+}
+
+.task .content {
+  flex: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task .content span {
+  display: grid;
+  place-items: center;
+  border: 1px solid #e19f41;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  border-right: 1px solid #fccb6f;
+  background-color: #e19f41;
+  padding-left: 10px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.task .content span:nth-child(2){
+  border-right:none;
+  border-radius: 0px;
+}
+
+.task button {
+  flex: 10%;
+  height: 100%;
+  border: none;
+  background-color: #038bbb;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.5);
+}
